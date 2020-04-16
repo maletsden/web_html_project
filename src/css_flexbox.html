@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Htmi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="header_btns">
+        <div><a href="../index.html" class="header__btn">Home</a></div>
+        <div class="dropdown dropdown-right">
+            <div class="header__btn">Sections</div>
+            <div class="sections dropdown__content">
+                <div><a href="html_basic_tags.html">HTML - Basic Tags</a></div>
+                <div><a href="html_images.html">HTML - Images</a></div>
+                <div><a href="html_forms.html">HTML - Forms</a></div>
+                <div><a href="css_syntax.html">CSS  - Syntax</a></div>
+                <div><a href="css_fonts.html">CSS  - Fonts</a></div>
+                <div><a href="css_positioning.html">CSS  - Positioning</a></div>
+                <div><a href="css_media_types.html">CSS  - Media Types</a></div>
+                <div><a href="css_animations.html">CSS  - Animations</a></div>
+                <div><a href="css_flexbox.html">CSS  - Flexbox</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="text">
+        <h4>
+            Flexbox
+        </h4>
+        <p>
+            In addition to the above-mentioned modes, CSS3 provides another layout mode Flexible Box, commonly called as <b>Flexbox</b>.
+        </p>
+
+        <p>
+            Using this mode, you can easily create layouts for complex applications and web pages. Unlike floats, Flexbox layout gives complete control over the direction, alignment, order, size of the boxes.
+        </p>
+
+        <h4>
+            Features of Flexbox
+        </h4>
+
+        <p>
+            Following are the notable features of Flexbox layout −
+        </p>
+
+        <ul>
+            <li>
+                <b>Direction</b> − You can arrange the items on a web page in any direction such as left to right, right to left, top to bottom, and bottom to top.
+            </li>
+            <li>
+                <b>Order</b> − Using Flexbox, you can rearrange the order of the contents of a web page.
+            </li>
+            <li>
+                <b>Wrap</b> − In case of inconsistent space for the contents of a web page (in single line), you can wrap them to multiple lines (both horizontally) and vertically.
+            </li>
+            <li>
+                <b>Alignment</b> − Using Flexbox, you can align the contents of the webpage with respect to their container.
+            </li>
+            <li>
+                <b>Resize</b> − Using Flexbox, you can increase or decrease the size of the items in the page to fit in available space.
+            </li>
+        </ul>
+
+        <h4>
+            Supporting browsers
+        </h4>
+
+        <p>
+            Following are the browsers that support Flexbox.
+        </p>
+
+        <ul>
+            <li>Chrome 29+</li>
+            <li>Firefox 28+</li>
+            <li>Internet Explorer 11+</li>
+            <li>Opera 17+</li>
+            <li>Safari 6.1+</li>
+            <li>Android 4.4+</li>
+            <li>iOS 7.1+</li>
+        </ul>
+    </section>
+
+
+
+
+    <section class="text">
+        <p>
+            To use Flexbox in your application, you need to create/define a flex container using the display property.
+        </p>
+
+        <p>
+            Usage −
+        </p>
+        <section class="code">
+            <div>display: flex | inline-flex</div>
+        </section>
+
+        <p>
+            This property accepts two values
+        </p>
+
+        <ul>
+            <li>
+                <b>flex</b> − Generates a block level flex container.
+            </li>
+            <li>
+                <b>inline-flex</b> − Generates an inline flex container box.
+            </li>
+        </ul>
+
+        <p>
+            Now, we will see how to use the display property with examples.
+        </p>
+    </section>
+
+    <section class="text">
+        <h4>
+            Flex
+        </h4>
+
+        <p>
+            On passing this value to the display property, a block level flex container will be created. It occupies the full width of the parent container (browser).
+        </p>
+
+        <p>
+            The following example demonstrates how to create a block level flex container. Here, we are creating six boxes with different colors and we have used the flex container to hold them.
+        </p>
+
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;style type = &quot;text/css&quot;&gt;</div>
+                    <div class="indent_1">
+                        <div>.box1{background:green;}</div>
+                        <div>.box2{background:blue;}</div>
+                        <div>.box3{background:red;}</div>
+                        <div>.box4{background:magenta;}</div>
+                        <div>.box5{background:yellow;}</div>
+                        <div>.box6{background:pink;}</div>
+                        <br>
+                        <div>.container{</div>
+                        <div class="indent_1">display:flex;</div>
+                        <div>}</div>
+                        <div>.box{</div>
+                        <div class="indent_1">
+                            <div>font-size:35px;</div>
+                            <div>padding:15px;</div>
+                        </div>
+                        <div>}</div>
+                    </div>
+                    <div>&lt;/style&gt;</div>
+                </div>
+                <br>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;div class = &quot;container&quot;&gt;</div>
+                    <div class="indent_1">
+                        <div>&lt;div class = &quot;box box1&quot;&gt;One&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box2&quot;&gt;two&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box3&quot;&gt;three&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box4&quot;&gt;four&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box5&quot;&gt;five&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box6&quot;&gt;six&lt;/div&gt;</div>
+                    </div>
+                    <div>&lt;/div&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/flexbox/flex.html"><button class="demo">Demo</button></a>
+
+        <p>
+            Since we have given the value flex to the display property, the container uses the width of the container (browser).
+        </p>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Inline flex
+        </h4>
+
+        <p>
+            On passing this value to the <b>display</b> property, an inline level flex container will be created. It just takes the place required for the content.
+        </p>
+
+        <p>
+            The following example demonstrates how to create an inline flex container. Here, we are creating six boxes with different colors and we have used the inline-flex container to hold them.
+        </p>
+
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;style type = &quot;text/css&quot;&gt;</div>
+                    <div class="indent_1">
+                        <div>.box1{background:green;}</div>
+                        <div>.box2{background:blue;}</div>
+                        <div>.box3{background:red;}</div>
+                        <div>.box4{background:magenta;}</div>
+                        <div>.box5{background:yellow;}</div>
+                        <div>.box6{background:pink;}</div>
+                        <br>
+                        <div>.container{</div>
+                        <div class="indent_1">
+                            <div>display:inline-flex;</div>
+                            <div>border:3px solid black;</div>
+                        </div>
+                        <div>}</div>
+                        <div>.box{</div>
+                        <div class="indent_1">
+                            <div>font-size:35px;</div>
+                            <div>padding:15px;</div>
+                        </div>
+                        <div>}</div>
+                    </div>
+                    <div>&lt;/style&gt;</div>
+                </div>
+                <br>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;div class = &quot;container&quot;&gt;</div>
+                    <div class="indent_1">
+                        <div>&lt;div class = &quot;box box1&quot;&gt;One&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box2&quot;&gt;two&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box3&quot;&gt;three&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box4&quot;&gt;four&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box5&quot;&gt;five&lt;/div&gt;</div>
+                        <div>&lt;div class = &quot;box box6&quot;&gt;six&lt;/div&gt;</div>
+                    </div>
+                    <div>&lt;/div&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/flexbox/inline_flex.html"><button class="demo">Demo</button></a>
+
+        <p>
+            Since we have used an inline flex container, it just took the space that is required to wrap its elements.
+        </p>
+    </section>
+</main>
+
+<footer>
+    Created by <a href="https://github.com/maletsden" target="_blank"> Denys Maletskyi </a>
+</footer>
+</body>
+</html>

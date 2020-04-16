@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Htmi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="header_btns">
+        <div><a href="../index.html" class="header__btn">Home</a></div>
+        <div class="dropdown dropdown-right">
+            <div class="header__btn">Sections</div>
+            <div class="sections dropdown__content">
+                <div><a href="html_basic_tags.html">HTML - Basic Tags</a></div>
+                <div><a href="html_images.html">HTML - Images</a></div>
+                <div><a href="html_forms.html">HTML - Forms</a></div>
+                <div><a href="css_syntax.html">CSS  - Syntax</a></div>
+                <div><a href="css_fonts.html">CSS  - Fonts</a></div>
+                <div><a href="css_positioning.html">CSS  - Positioning</a></div>
+                <div><a href="css_media_types.html">CSS  - Media Types</a></div>
+                <div><a href="css_animations.html">CSS  - Animations</a></div>
+                <div><a href="css_flexbox.html">CSS  - Flexbox</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="text">
+        <h4>Forms</h4>
+        <p>
+            HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.
+        </p>
+        <p>
+            A form will take input from the site visitor and then will post it to a back-end application such as CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.
+        </p>
+        <p>
+            There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.
+        </p>
+
+        <p>
+            The HTML <b>&lt;form&gt;</b> tag is used to create an HTML form and it has following syntax −
+        </p>
+
+        <section class="code">
+            <div>&lt;form action = &quot;Script URL&quot; method = &quot;GET|POST&quot;&gt;</div>
+                <div class="indent_1">form elements like input, textarea etc.</div>
+            <div>&lt;/form&gt;</div>
+        </section>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            HTML Form Controls
+        </h4>
+        <p>
+            There are different types of form controls that you can use to collect data using HTML form −
+        </p>
+
+        <ul>
+            <li>
+                Text Input Controls
+            </li>
+            <li>
+                Checkboxes Controls
+            </li>
+            <li>
+                Radio Box Controls
+            </li>
+            <li>
+                Select Box Controls
+            </li>
+            <li>
+                File Select boxes
+            </li>
+            <li>
+                Hidden Controls
+            </li>
+            <li>
+                Clickable Buttons
+            </li>
+            <li>
+                Submit and Reset Button
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Text Input Controls
+        </h4>
+        <p>
+            There are three types of text input used on forms −
+        </p>
+
+        <ul>
+            <li>
+                <b>Single-line text input controls</b> − This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML <b>&lt;input&gt;</b> tag.
+            </li>
+            <li>
+                <b>Password input controls</b> − This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl &lt;input&gt; tag.
+            </li>
+            <li>
+                <b>Multi-line text input controls</b> − This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML <b>&lt;textarea&gt;</b> tag.
+            </li>
+        </ul>
+    </section>
+
+
+
+
+
+    <section class="text">
+        <h4>Single-line text input controls</h4>
+
+        <p>
+            This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &lt;input&gt; tag.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is a basic example of a single-line text input used to take first name and last name −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Text Input Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>First name: &lt;input type = &quot;text&quot; name = &quot;first_name&quot; /&gt;</div>
+                        <div>&lt;br&gt;</div>
+                        <div>Last name: &lt;input type = &quot;text&quot; name = &quot;last_name&quot; /&gt;</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/text_input_control.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Password input controls</h4>
+
+        <p>
+            This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>password</b>.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is a basic example of a single-line password input used to take user password −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Password Input Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>User ID : &lt;input type = &quot;text&quot; name = &quot;user_id&quot; /&gt;</div>
+                        <div>&lt;br&gt;</div>
+                        <div>Password: &lt;input type = &quot;password&quot; name = &quot;password&quot; /&gt;</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/password_input_control.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Multiple-Line Text Input Controls</h4>
+
+        <p>
+            This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lt;textarea&gt; tag.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is a basic example of a multi-line text input used to take item description −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Multiple-Line Input Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>Description : &lt;br /&gt;</div>
+                        <div>&lt;textarea rows = &quot;5&quot; cols = &quot;50&quot; name = &quot;description&quot;&gt;</div>
+                            <div class="indent_1">Enter description here...</div>
+                        <div>&lt;/textarea&gt;</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/multiple_line_input_control.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Checkbox Control</h4>
+
+        <p>
+            Checkboxes are used when more than one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>checkbox</b>.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is an example HTML code for a form with two checkboxes −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Checkbox Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>&lt;input type = &quot;checkbox&quot; name = &quot;maths&quot; value = &quot;on&quot;&gt; Maths</div>
+                        <div>&lt;input type = &quot;checkbox&quot; name = &quot;physics&quot; value = &quot;on&quot;&gt; Physics</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/checkbox_control.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Radio Button Control</h4>
+
+        <p>
+            Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>radio</b>.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is example HTML code for a form with two radio buttons −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Radio Box Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>&lt;input type = &quot;radio&quot; name = &quot;subject&quot; value = &quot;maths&quot;&gt; Maths</div>
+                        <div>&lt;input type = &quot;radio&quot; name = &quot;subject&quot; value = &quot;physics&quot;&gt; Physics</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/radio_button_control.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Select Box Control</h4>
+
+        <p>
+            A select box, also called drop down box which provides option to list down various options in the form of drop down list, from where a user can select one or more options.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is example HTML code for a form with one drop down box −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Radio Box Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>&lt;select name = &quot;dropdown&quot;&gt;</div>
+                        <div class="indent_1">
+                            <div>&lt;option value = &quot;Maths&quot; selected&gt;Maths&lt;/option&gt;</div>
+                            <div>&lt;option value = &quot;Physics&quot;&gt;Physics&lt;/option&gt;</div>
+                        </div>
+                        <div>&lt;/select&gt;</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/select_box_control.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>File Upload Box</h4>
+
+        <p>
+            If you want to allow a user to upload a file to your web site, you will need to use a file upload box, also known as a file select box. This is also created using the &lt;input&gt; element but type attribute is set to <b>file</b>.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is example HTML code for a form with one file upload box −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;File Upload Box&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                        <div class="indent_1">&lt;input type = &quot;file&quot; name = &quot;fileupload&quot; accept = &quot;image/*&quot; /&gt;</div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/file_upload_box.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Button Controls</h4>
+
+        <p>
+            There are various ways in HTML to create clickable buttons. You can also create a clickable button using &lt;input&gt; tag by setting its type attribute to <b>button</b>.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is example HTML code for a form with three types of buttons −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Radio Box Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>&lt;input type = &quot;submit&quot; name = &quot;submit&quot; value = &quot;Submit&quot; /&gt;</div>
+                        <div>&lt;input type = &quot;reset&quot; name = &quot;reset&quot;  value = &quot;Reset&quot; /&gt;</div>
+                        <div>&lt;input type = &quot;button&quot; name = &quot;ok&quot; value = &quot;OK&quot; /&gt;</div>
+                        <div>&lt;input type = &quot;image&quot; name = &quot;imagebutton&quot; src = &quot;../../images/logo.jpg&quot; /&gt;</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/button_control.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Hidden Form Controls</h4>
+
+        <p>
+            Hidden form controls are used to hide data inside the page which later on can be pushed to the server. This control hides inside the code and does not appear on the actual page. For example, following hidden form is being used to keep current page number. When a user will click next page then the value of hidden control will be sent to the web server and there it will decide which page will be displayed next based on the passed current page.
+        </p>
+
+        <h4>
+            Example
+        </h4>
+
+        <p>
+            Here is example HTML code to show the usage of hidden control −
+        </p>
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Radio Box Control&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div> &lt;form&gt;</div>
+                    <div class="indent_1">
+                        <div>&lt;p&gt;This is page 10&lt;/p&gt;</div>
+                        <div>&lt;input type = &quot;hidden&quot; name = &quot;pagename&quot; value = &quot;10&quot; /&gt;</div>
+                        <div>&lt;input type = &quot;submit&quot; name = &quot;submit&quot; value = &quot;Submit&quot; /&gt;</div>
+                        <div>&lt;input type = &quot;reset&quot; name = &quot;reset&quot;  value = &quot;Reset&quot; /&gt;</div>
+                    </div>
+                    <div>&lt;/form&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/forms/hidden_from_controls.html"><button class="demo">Demo</button></a>
+    </section>
+</main>
+
+<footer>
+    Created by <a href="https://github.com/maletsden" target="_blank"> Denys Maletskyi </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import "constants.css";
+
+@import "components/header.css";
+@import "components/main.css";
+@import "components/footer.css";
+
+@import "components/code.css";
+@import "components/sections.css";
+@import "components/dropdown.css";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a, button {
+    cursor: pointer;
+}

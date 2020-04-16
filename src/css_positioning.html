@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Htmi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="header_btns">
+        <div><a href="../index.html" class="header__btn">Home</a></div>
+        <div class="dropdown dropdown-right">
+            <div class="header__btn">Sections</div>
+            <div class="sections dropdown__content">
+                <div><a href="html_basic_tags.html">HTML - Basic Tags</a></div>
+                <div><a href="html_images.html">HTML - Images</a></div>
+                <div><a href="html_forms.html">HTML - Forms</a></div>
+                <div><a href="css_syntax.html">CSS  - Syntax</a></div>
+                <div><a href="css_fonts.html">CSS  - Fonts</a></div>
+                <div><a href="css_positioning.html">CSS  - Positioning</a></div>
+                <div><a href="css_media_types.html">CSS  - Media Types</a></div>
+                <div><a href="css_animations.html">CSS  - Animations</a></div>
+                <div><a href="css_flexbox.html">CSS  - Flexbox</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="text">
+        <h4>
+            Positioning
+        </h4>
+        <p>
+            CSS helps you to position your HTML element. You can put any HTML element at whatever location you like. You can specify whether you want the element positioned relative to its natural position in the page or absolute based on its parent element.
+        </p>
+
+        <p>
+            Now, we will see all the CSS positioning related properties with examples.
+        </p>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Relative Positioning
+        </h4>
+
+        <p>
+            Relative positioning changes the position of the HTML element relative to where it normally appears. So "left:20" adds 20 pixels to the element's LEFT position.
+        </p>
+
+        <p>
+            You can use two values top and left along with the position property to move an HTML element anywhere in the HTML document.
+        </p>
+
+        <ul>
+            <li>Move Left - Use a negative value for left.</li>
+            <li>Move Right - Use a positive value for left.</li>
+            <li>Move Up - Use a negative value for top.</li>
+            <li>Move Down - Use a positive value for top.</li>
+        </ul>
+
+        <p><b>NOTE</b> − You can use bottom or right values as well in the same way as top and left.</p>
+
+        <p>
+            Here is the example −
+        </p>
+
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;div style = &quot;position:relative; left:80px; top:2px; background-color:yellow;&quot;&gt;</div>
+                    <div class="indent_1">This div has relative positioning.</div>
+                    <div>&lt;/div&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/positioning/relative.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Absolute Positioning
+        </h4>
+
+        <p>
+            An element with <b>position: absolute</b> is positioned at the specified coordinates relative to your screen top-left corner.
+        </p>
+
+        <p>
+            You can use two values top and left along with the position property to move an HTML element anywhere in the HTML document.
+        </p>
+
+        <ul>
+            <li>Move Left - Use a negative value for left.</li>
+            <li>Move Right - Use a positive value for left.</li>
+            <li>Move Up - Use a negative value for top.</li>
+            <li>Move Down - Use a positive value for top.</li>
+        </ul>
+
+        <p><b>NOTE</b> − You can use bottom or right values as well in the same way as top and left.</p>
+
+        <p>
+            Here is the example −
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;div style = &quot;position:absolute; left:80px; top:20px; background-color:yellow;&quot;&gt;</div>
+                    <div class="indent_1">This div has absolute positioning.</div>
+                    <div>&lt;/div&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/absolute.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Fixed Positioning
+        </h4>
+
+        <p>
+            Fixed positioning allows you to fix the position of an element to a particular spot on the page, regardless of scrolling. Specified coordinates will be relative to the browser window.
+        </p>
+
+        <p>
+            You can use two values top and left along with the position property to move an HTML element anywhere in the HTML document.
+        </p>
+
+        <ul>
+            <li>Move Left - Use a negative value for left.</li>
+            <li>Move Right - Use a positive value for left.</li>
+            <li>Move Up - Use a negative value for top.</li>
+            <li>Move Down - Use a positive value for top.</li>
+        </ul>
+
+        <p><b>NOTE</b> − You can use bottom or right values as well in the same way as top and left.</p>
+
+        <p>
+            Here is the example −
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;div style = &quot;position:fixed; left:80px; top:20px; background-color:yellow;&quot;&gt;</div>
+                    <div class="indent_1">This div has absolute positioning.</div>
+                    <div>&lt;/div&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/fixed.html"><button class="demo">Demo</button></a>
+    </section>
+</main>
+
+<footer>
+    Created by <a href="https://github.com/maletsden" target="_blank"> Denys Maletskyi </a>
+</footer>
+</body>
+</html>

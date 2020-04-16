@@ -1,0 +1,12 @@
+main {
+    min-height: calc(100vh - var(--header_height) - var(--footer_height));
+    padding: 40px 10% 0 10%;
+    font-family: var(--main_font-family);
+    text-align: justify;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+

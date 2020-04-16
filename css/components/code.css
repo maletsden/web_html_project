@@ -1,0 +1,29 @@
+.indent_1 {
+    margin-left: 20px;
+}
+
+.indent_2 {
+    margin-left: 40px;
+}
+
+.indent_3 {
+    margin-left: 60px;
+}
+
+button.demo {
+    display: block;
+    width: 90px;
+    height: 40px;
+    background: var(--red_color);
+    color: white;
+    font-size: 20px;
+    font-family: var(--main_font-family);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.15);
+}
+
+button.demo:focus,
+button.demo:hover {
+    text-decoration: none;
+    outline: none;
+}

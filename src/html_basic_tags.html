@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Htmi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="header_btns">
+        <div><a href="../index.html" class="header__btn">Home</a></div>
+        <div class="dropdown dropdown-right">
+            <div class="header__btn">Sections</div>
+            <div class="sections dropdown__content">
+                <div><a href="html_basic_tags.html">HTML - Basic Tags</a></div>
+                <div><a href="html_images.html">HTML - Images</a></div>
+                <div><a href="html_forms.html">HTML - Forms</a></div>
+                <div><a href="css_syntax.html">CSS  - Syntax</a></div>
+                <div><a href="css_fonts.html">CSS  - Fonts</a></div>
+                <div><a href="css_positioning.html">CSS  - Positioning</a></div>
+                <div><a href="css_media_types.html">CSS  - Media Types</a></div>
+                <div><a href="css_animations.html">CSS  - Animations</a></div>
+                <div><a href="css_flexbox.html">CSS  - Flexbox</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="text">
+        <h4>Heading Tags</h4>
+        <p>
+            Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <b>&lt;h1&gt;</b>, <b>&lt;h2&gt;</b>, <b>&lt;h3&gt;</b>, <b>&lt;h4&gt;</b>, <b>&lt;h5&gt;</b>, and <b>&lt;h6&gt;</b>. While displaying any heading, browser adds one line before and one line after that heading.
+        </p>
+    </section>
+
+
+    <section class="text">
+        <h4>Example</h4>
+
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Heading Example&lt;/title&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;h1&gt;This is heading 1&lt;/h1&gt;</div>
+                    <div>&lt;h2&gt;This is heading 2&lt;/h2&gt;</div>
+                    <div>&lt;h3&gt;This is heading 3&lt;h3&gt;</div>
+                    <div>&lt;h4&gt;This is heading 4&lt;h4&gt;</div>
+                    <div>&lt;h5&gt;This is heading 5&lt;h5&gt;</div>
+                    <div>&lt;h6&gt;This is heading 6&lt;h6&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/basic_tags/headings.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Paragraph Tag</h4>
+        <p>
+            The <b>&lt;p&gt;</b> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening &lt;p&gt; and a closing &lt;p&gt; tag as shown below in the example.
+        </p>
+    </section>
+
+
+    <section class="text">
+        <h4>Example</h4>
+
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Paragraph Example&lt;/title&gt;</div>
+                </div>
+
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p&gt;Here is a first paragraph of text.&lt;/p&gt;</div>
+                    <div>&lt;p&gt;Here is a second paragraph of text.&lt;/p&gt;</div>
+                    <div>&lt;p&gt;Here is a third paragraph of text.&lt;/p&gt;</div>
+                </div>
+
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/basic_tags/paragraph_tag.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Line Break Tag</h4>
+        <p>
+            Whenever you use the <b>&lt;br /&gt;</b> element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.
+        </p>
+        <p>
+            The &lt;br /&gt; tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use &lt;br&gt; it is not valid in XHTML.
+        </p>
+    </section>
+
+
+    <section class="text">
+        <h4>Example</h4>
+
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Line Break  Example&lt;/title&gt;</div>
+                </div>
+
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p&gt;Hello&lt;br /&gt;</div>
+                    <div class="indent_1">
+                        <div>You delivered your assignment ontime.&lt;br /&gt;</div>
+                        <div>Thanks&lt;br /&gt;</div>
+                        <div>Mahnaz&lt;/p&gt;</div>
+                    </div>
+                </div>
+
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/basic_tags/line_break_tag.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Horizontal Lines</h4>
+        <p>
+            Horizontal lines are used to visually break-up sections of a document. The <b>&lt;hr&gt;</b> tag creates a line from the current position in the document to the right margin and breaks the line accordingly.
+        </p>
+        <p>
+            For example, you may want to give a line between two paragraphs as in the given example below −
+        </p>
+    </section>
+
+
+    <section class="text">
+        <h4>Example</h4>
+
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Horizontal Line Example&lt;/title&gt;</div>
+                </div>
+
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p&gt;This is paragraph one and should be on top&lt;/p&gt;</div>
+                    <div>&lt;hr /&gt;</div>
+                    <div>&lt;p&gt;This is paragraph two and should be at bottom&lt;/p&gt;</div>
+                </div>
+
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/basic_tags/horizontal_line.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Preserve Formatting</h4>
+        <p>
+            Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag <b>&lt;pre&gt;</b>.
+        </p>
+        <p>
+            Any text between the opening &lt;pre&gt; tag and the closing &lt;/pre&gt; tag will preserve the formatting of the source document.
+        </p>
+    </section>
+
+
+    <section class="text">
+        <h4>Example</h4>
+
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Preserve Formatting Example&lt;/title&gt;</div>
+                </div>
+
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;pre&gt;</div>
+                        <div class="indent_1">
+                            <div>function testFunction( strText ) {</div>
+                                <div class="indent_1">alert (strText)</div>
+                            <div>}</div>
+                        </div>
+                    <div>&lt;/pre&gt;</div>
+                </div>
+
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/basic_tags/horizontal_line.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>Nonbreaking Spaces</h4>
+        <p>
+            In cases, where you do not want the client browser to break text, you should use a nonbreaking space entity &nbsp; instead of a normal space. For example, when coding the "12 Angry Men" in a paragraph, you should use something similar to the following code −
+        </p>
+    </section>
+
+
+    <section class="text">
+        <h4>Example</h4>
+
+        <section class="code">
+
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;Nonbreaking Spaces Example&lt;/title&gt;</div>
+                </div>
+
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                    <div class="indent_1">&lt;p&gt;An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."&lt;/pre&gt;</div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+
+        </section>
+        <a href="../examples/basic_tags/nonbreaking_tag.html"><button class="demo">Demo</button></a>
+    </section>
+</main>
+
+<footer>
+    Created by <a href="https://github.com/maletsden" target="_blank"> Denys Maletskyi </a>
+</footer>
+</body>
+</html>

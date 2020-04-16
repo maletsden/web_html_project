@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Htmi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="header_btns">
+        <div><a href="../index.html" class="header__btn">Home</a></div>
+        <div class="dropdown dropdown-right">
+            <div class="header__btn">Sections</div>
+            <div class="sections dropdown__content">
+                <div><a href="html_basic_tags.html">HTML - Basic Tags</a></div>
+                <div><a href="html_images.html">HTML - Images</a></div>
+                <div><a href="html_forms.html">HTML - Forms</a></div>
+                <div><a href="css_syntax.html">CSS  - Syntax</a></div>
+                <div><a href="css_fonts.html">CSS  - Fonts</a></div>
+                <div><a href="css_positioning.html">CSS  - Positioning</a></div>
+                <div><a href="css_media_types.html">CSS  - Media Types</a></div>
+                <div><a href="css_animations.html">CSS  - Animations</a></div>
+                <div><a href="css_flexbox.html">CSS  - Flexbox</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="text">
+        <h4>
+            Animation
+        </h4>
+        <p>
+            Animation is process of making shape changes and creating motions with elements.
+        </p>
+
+        <h4>
+            @keyframes
+        </h4>
+
+        <p>
+            Keyframes will control the intermediate animation steps in CSS3.
+        </p>
+
+        <p>
+            Example of key frames with left animation −
+        </p>
+
+        <section class="code">
+            <div>@keyframes animation {</div>
+            <div class="indent_1">
+                <div>from {background-color: pink;}</div>
+                <div>to {background-color: green;}</div>
+            </div>
+            <div>}</div>
+            <div>div {</div>
+            <div class="indent_1">
+                <div>width: 100px;</div>
+                <div>height: 100px;</div>
+                <div>background-color: red;</div>
+                <div>animation-name: animation;</div>
+                <div>animation-duration: 5s;</div>
+            </div>
+            <div>}</div>
+        </section>
+
+        <p>
+            The above example shows height, width, color, name and duration of animation with keyframes syntax.
+        </p>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Moving left animation
+        </h4>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;style type = &quot;text/css&quot;&gt;</div>
+                    <div class="indent_1">
+                        <div>h1 {</div>
+                        <div class="indent_1">
+                            <div>-moz-animation-duration: 3s;</div>
+                            <div>-webkit-animation-duration: 3s;</div>
+                            <div>-moz-animation-name: slidein;</div>
+                            <div>-webkit-animation-name: slidein;</div>
+                        </div>
+                        <div>}</div>
+                        <div>@-moz-keyframes slidein {</div>
+                        <div class="indent_1">
+                            <div>from {</div>
+                            <div class="indent_1">
+                                <div>margin-left:100%;</div>
+                                <div>width:300%</div>
+                            </div>
+                            <div>}</div>
+                            <div>to {</div>
+                            <div class="indent_1">
+                                <div>margin-left:0%;</div>
+                                <div>width:100%;</div>
+                            </div>
+                            <div>}</div>
+                        </div>
+
+                        <div>}</div>
+                        <div>@-webkit-keyframes slidein {</div>
+                        <div class="indent_1">
+                            <div>from {</div>
+                            <div class="indent_1">
+                                <div>margin-left:100%;</div>
+                                <div>width:300%</div>
+                            </div>
+                            <div>}</div>
+
+                            <div>to {</div>
+                            <div class="indent_1">
+                                <div>margin-left:0%;</div>
+                                <div>width:100%;</div>
+                            </div>
+                            <div>}</div>
+                        </div>
+                        <div>}</div>
+                    </div>
+                    <div>&lt;/style&gt;</div>
+                </div>
+                <br>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;h1&gt;Tutorials Point&lt;/h1&gt;</div>
+                    <div>&lt;p&gt;this is an example of moving left animation .&lt;/p&gt;</div>
+                    <div>&lt;button onclick = &quot;myFunction()&quot;&gt;Reload page&lt;/button&gt;</div>
+                    <div>&lt;script&gt;</div>
+                    <div class="indent_1">
+                        <div>function myFunction() {</div>
+                            <div class="indent_1">location.reload();</div>
+                        <div>}</div>
+                    </div>
+                    <div>&lt;/script&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/animations/moving_left_animation.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Moving left animation with keyframes
+        </h4>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;style type = &quot;text/css&quot;&gt;</div>
+                    <div class="indent_1">
+                        <div>h1 {</div>
+                        <div class="indent_1">
+                            <div>-moz-animation-duration: 3s;</div>
+                            <div>-webkit-animation-duration: 3s;</div>
+                            <div>-moz-animation-name: slidein;</div>
+                            <div>-webkit-animation-name: slidein;</div>
+                        </div>
+                        <div>}</div>
+                        <div>@-moz-keyframes slidein {</div>
+                        <div class="indent_1">
+                            <div>from {</div>
+                            <div class="indent_1">
+                                <div>margin-left:100%;</div>
+                                <div>width:300%</div>
+                            </div>
+                            <div>}</div>
+                            <div>75% {</div>
+                            <div class="indent_1">
+                                <div>font-size:300%;</div>
+                                <div>margin-left:25%;</div>
+                                <div>width:150%;</div>
+                            </div>
+                            <div>}</div>
+                            <div>to {</div>
+                            <div class="indent_1">
+                                <div>margin-left:0%;</div>
+                                <div>width:100%;</div>
+                            </div>
+                            <div>}</div>
+                        </div>
+
+                        <div>}</div>
+                        <div>@-webkit-keyframes slidein {</div>
+                        <div class="indent_1">
+                            <div>from {</div>
+                            <div class="indent_1">
+                                <div>margin-left:100%;</div>
+                                <div>width:300%</div>
+                            </div>
+                            <div>}</div>
+                            <div class="indent_1">
+                                <div>font-size:300%;</div>
+                                <div>margin-left:25%;</div>
+                                <div>width:150%;</div>
+                            </div>
+                            <div>to {</div>
+                            <div class="indent_1">
+                                <div>margin-left:0%;</div>
+                                <div>width:100%;</div>
+                            </div>
+                            <div>}</div>
+                        </div>
+                        <div>}</div>
+                    </div>
+                    <div>&lt;/style&gt;</div>
+                </div>
+                <br>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;h1&gt;Tutorials Point&lt;/h1&gt;</div>
+                    <div>&lt;p&gt;This is an example of animation left with an extra keyframe
+                        to make text changes.&lt;/p&gt;</div>
+                    <div>&lt;button onclick = &quot;myFunction()&quot;&gt;Reload page&lt;/button&gt;</div>
+                    <div>&lt;script&gt;</div>
+                    <div class="indent_1">
+                        <div>function myFunction() {</div>
+                        <div class="indent_1">location.reload();</div>
+                        <div>}</div>
+                    </div>
+                    <div>&lt;/script&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/animations/moving_left_animation_with_keyframes.html"><button class="demo">Demo</button></a>
+    </section>
+</main>
+
+<footer>
+    Created by <a href="https://github.com/maletsden" target="_blank"> Denys Maletskyi </a>
+</footer>
+</body>
+</html>

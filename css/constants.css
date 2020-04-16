@@ -1,0 +1,10 @@
+:root {
+    --red_color: #E65233;
+    --grey_color: #f1f1f1;
+    --white_color: white;
+
+    --header_height: 40px;
+    --footer_height: 60px;
+
+    --main_font-family: Arial, serif;
+}

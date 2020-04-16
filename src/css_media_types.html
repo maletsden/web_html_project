@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Htmi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="header_btns">
+        <div><a href="../index.html" class="header__btn">Home</a></div>
+        <div class="dropdown dropdown-right">
+            <div class="header__btn">Sections</div>
+            <div class="sections dropdown__content">
+                <div><a href="html_basic_tags.html">HTML - Basic Tags</a></div>
+                <div><a href="html_images.html">HTML - Images</a></div>
+                <div><a href="html_forms.html">HTML - Forms</a></div>
+                <div><a href="css_syntax.html">CSS  - Syntax</a></div>
+                <div><a href="css_fonts.html">CSS  - Fonts</a></div>
+                <div><a href="css_positioning.html">CSS  - Positioning</a></div>
+                <div><a href="css_media_types.html">CSS  - Media Types</a></div>
+                <div><a href="css_animations.html">CSS  - Animations</a></div>
+                <div><a href="css_flexbox.html">CSS  - Flexbox</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="text">
+        <h4>
+            Media Types
+        </h4>
+        <p>
+            One of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper, with a speech synthesizer, with a braille device, etc.
+        </p>
+
+        <p>
+            We have currently two ways to specify media dependencies for style sheets −
+        </p>
+
+        <ul>
+            <li>
+                Specify the target medium from a style sheet with the @media or @import at-rules.
+            </li>
+            <li>
+                Specify the target medium within the document language.
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            The @media rule
+        </h4>
+
+        <p>
+            An @media rule specifies the target media types (separated by commas) of a set of rules.
+        </p>
+
+        <p>
+            Given below is an example −
+        </p>
+
+        <ul>
+            <li>Move Left - Use a negative value for left.</li>
+            <li>Move Right - Use a positive value for left.</li>
+            <li>Move Up - Use a negative value for top.</li>
+            <li>Move Down - Use a positive value for top.</li>
+        </ul>
+
+        <p><b>NOTE</b> − You can use bottom or right values as well in the same way as top and left.</p>
+
+        <p>
+            Here is the example −
+        </p>
+
+
+        <section class="code">
+            <div>&lt;style tyle = &quot;text/css&quot;&gt;</div>
+            <div class="indent_1">
+                <div>@media print {</div>
+                <div class="indent_1">body { font-size: 10pt }</div>
+                <div>}</div>
+                <br>
+                <div>@media screen {</div>
+                <div class="indent_1">body { font-size: 12pt }</div>
+                <div>}</div>
+                <div>@media screen, print {</div>
+                <div class="indent_1">body { line-height: 1.2 }</div>
+                <div>}</div>
+            </div>
+            <div>&lt;/style&gt;</div>
+        </section>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            The Document Language
+        </h4>
+
+        <p>
+            In HTML 4.0, the media attribute on the LINK element specifies the target media of an external style sheet.
+        </p>
+
+        <p>
+            Following is an example −
+        </p>
+        
+        <section class="code">
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;title&gt;link to a target medium&lt;/title&gt;</div>
+                    <div>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;print, handheld&quot; href=&quot;foo.css&quot;&gt;</div>
+                </div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p&gt;the body...</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+
+
+            <div>&lt;/html&gt;</div>
+            </section>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Recognized Media Types
+        </h4>
+
+        <p>
+            The names chosen for CSS media types reflect target devices for which the relevant properties make sense. They give a sense of what device the media type is meant to refer to. Given below is a list of various media types −
+        </p>
+
+        <ul>
+            <li>
+                <b>all</b> - Suitable for all devices.
+            </li>
+            <li>
+                <b>aural</b> - Intended for speech synthesizers.
+            </li>
+            <li>
+                <b>braille</b> - Intended for braille tactile feedback devices.
+            </li>
+            <li>
+                <b>embossed</b> - Intended for paged braille printers.
+            </li>
+            <li>
+                <b>handheld</b> - Intended for handheld devices (typically small screen, monochrome, limited bandwidth).
+            </li>
+            <li>
+                <b>print</b> - Intended for paged, opaque material and for documents viewed on screen in print preview mode. Please consult the section on paged media.
+            </li>
+            <li>
+                <b>projection</b> - Intended for projected presentations, for example projectors or print to transparencies. Please consult the section on paged media.
+            </li>
+            <li>
+                <b>screen</b> - Intended primarily for color computer screens.
+            </li>
+            <li>
+                <b>tty</b> - Intended for media using a fixed-pitch character grid, such as teletypes, terminals, or portable devices with limited display capabilities.
+            </li>
+            <li>
+                <b>tv</b> - Intended for television-type devices.
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    Created by <a href="https://github.com/maletsden" target="_blank"> Denys Maletskyi </a>
+</footer>
+</body>
+</html>

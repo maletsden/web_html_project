@@ -1,0 +1,12 @@
+section {
+    margin: 30px 0;
+}
+section.code {
+    padding: 15px;
+    background-color: var(--grey_color);
+    font-size: 14px;
+}
+
+section.text {
+    border-top: 1px solid black;
+}

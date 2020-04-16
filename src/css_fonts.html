@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Htmi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.jpg">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="header_btns">
+        <div><a href="../index.html" class="header__btn">Home</a></div>
+        <div class="dropdown dropdown-right">
+            <div class="header__btn">Sections</div>
+            <div class="sections dropdown__content">
+                <div><a href="html_basic_tags.html">HTML - Basic Tags</a></div>
+                <div><a href="html_images.html">HTML - Images</a></div>
+                <div><a href="html_forms.html">HTML - Forms</a></div>
+                <div><a href="css_syntax.html">CSS  - Syntax</a></div>
+                <div><a href="css_fonts.html">CSS  - Fonts</a></div>
+                <div><a href="css_positioning.html">CSS  - Positioning</a></div>
+                <div><a href="css_media_types.html">CSS  - Media Types</a></div>
+                <div><a href="css_animations.html">CSS  - Animations</a></div>
+                <div><a href="css_flexbox.html">CSS  - Flexbox</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="text">
+        <h4>
+            Fonts
+        </h4>
+        <p>
+            This chapter teaches you how to set fonts of a content, available in an HTML element. You can set following font properties of an element −
+        </p>
+
+        <ul>
+            <li>
+                The <b>font-family</b> property is used to change the face of a font.
+            </li>
+            <li>
+                The <b>font-style</b> property is used to make a font italic or oblique.
+            </li>
+            <li>
+                The <b>font-variant</b> property is used to create a small-caps effect.
+            </li>
+            <li>
+                The <b>font-weight</b> property is used to increase or decrease how bold or light a font appears.
+            </li>
+            <li>
+                The <b>font-size</b> property is used to increase or decrease the size of a font.
+            </li>
+            <li>
+                The <b>font property</b> is used as shorthand to specify a number of other font properties.
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Set the Font Family
+        </h4>
+
+        <p>
+            Following is the example, which demonstrates how to set the font family of an element. Possible value could be any font family name.
+        </p>
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font-family:georgia,garamond,serif;&quot;&gt;</div>
+                    <div class="indent_1">This text is rendered in either georgia, garamond, or the</div>
+                    <div class="indent_1">default serif font depending on which font  you have at your system.</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_family.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Set the Font Style
+        </h4>
+
+        <p>
+            Following is the example, which demonstrates how to set the font style of an element. Possible values are normal, italic and oblique.
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font-style:italic;&quot;&gt;</div>
+                    <div class="indent_1">This text will be rendered in italic style</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_style.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Set the Font Variant
+        </h4>
+
+        <p>
+            The following example demonstrates how to set the font variant of an element. Possible values are normal and small-caps.
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font-variant:small-caps;&quot;&gt;</div>
+                    <div class="indent_1">This text will be rendered as small caps</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_variant.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Set the Font Weight
+        </h4>
+
+        <p>
+            The following example demonstrates how to set the font weight of an element. The font-weight property provides the functionality to specify how bold a font is. Possible values could be normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900.
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font-weight:bold;&quot;&gt;</div>
+                    <div class="indent_1">This font is bold.</div>
+                    <div>&lt;/p&gt;</div>
+                    <br>
+                    <div>&lt;p style = &quot;font-weight:bolder;&quot;&gt;</div>
+                    <div class="indent_1">This font is bolder.</div>
+                    <div>&lt;/p&gt;</div>
+                    <br>
+                    <div>&lt;p style = &quot;font-weight:500;&quot;&gt;</div>
+                    <div class="indent_1">This font is 500 weight.</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_weight.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+
+    <section class="text">
+        <h4>
+            Set the Font Size
+        </h4>
+
+        <p>
+            The following example demonstrates how to set the font size of an element. The font-size property is used to control the size of fonts. Possible values could be xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, size in pixels or in %.
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font-size:20px;&quot;&gt;</div>
+                    <div class="indent_1">This font size is 20 pixels</div>
+                    <div>&lt;/p&gt;</div>
+                    <br>
+                    <div>&lt;p style = &quot;font-size:small;&quot;&gt;</div>
+                    <div class="indent_1">This font size is small</div>
+                    <div>&lt;/p&gt;</div>
+                    <br>
+                    <div>&lt;p style = &quot;font-size:large;&quot;&gt;</div>
+                    <div class="indent_1">This font size is large</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_size.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Set the Font Size Adjust
+        </h4>
+
+        <p>
+            The following example demonstrates how to set the font size adjust of an element. This property enables you to adjust the x-height to make fonts more legible. Possible value could be any number.
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font-size-adjust:0.61;&quot;&gt;</div>
+                    <div class="indent_1">This text is using a font-size-adjust value.</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_size_adjust.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+
+    <section class="text">
+        <h4>
+            Set the Font Stretch
+        </h4>
+
+        <p>
+            The following example demonstrates how to set the font stretch of an element. This property relies on the user's computer to have an expanded or condensed version of the font being used.
+        </p>
+
+        <p>
+            Possible values could be normal, wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded.
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font-stretch:ultra-expanded;&quot;&gt;</div>
+                    <div class="indent_1">If this doesn't appear to work, it is likely that your computer</div>
+                    <div class="indent_1">doesn't have a &lt;br&gt;condensed or expanded version of the font being used.</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_stretch.html"><button class="demo">Demo</button></a>
+    </section>
+
+
+
+
+    <section class="text">
+        <h4>
+            Shorthand Property
+        </h4>
+
+        <p>
+            You can use the font property to set all the font properties at once. For example −
+        </p>
+
+        <section class="code">
+            <div>&lt;html&gt;</div>
+            <br>
+            <div class="indent_1">
+                <div>&lt;head&gt;</div>
+                <div>&lt;/head&gt;</div>
+                <br>
+                <div>&lt;body&gt;</div>
+                <div class="indent_1">
+                    <div>&lt;p style = &quot;font:italic small-caps bold 15px georgia;&quot;&gt;</div>
+                    <div class="indent_1">Applying all the properties on the text at once.</div>
+                    <div>&lt;/p&gt;</div>
+                </div>
+                <div>&lt;/body&gt;</div>
+            </div>
+            <br>
+            <div>&lt;/html&gt;</div>
+        </section>
+        <a href="../examples/fonts/font_shorthand.html"><button class="demo">Demo</button></a>
+    </section>
+</main>
+
+<footer>
+    Created by <a href="https://github.com/maletsden" target="_blank"> Denys Maletskyi </a>
+</footer>
+</body>
+</html>

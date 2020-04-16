@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--footer_height);
+    font-size: 15px;
+    font-family: var(--main_font-family);
+    color: white;
+    background: black;
+}
+
+footer a {
+    margin: 0 5px;
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--red_color);
+}
